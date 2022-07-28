@@ -348,4 +348,4 @@ async def restart_(_, message):
     await response.edit(
         "Reboot has been initiated successfully! Wait for 1 - 2 minutes until the bot restarts."
     )
-    os.system(f"kill -9 {os.getpid()} && docker run melih")
+    os.system(f"kill -9 {os.getpid()} && bash start")
