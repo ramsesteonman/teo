@@ -15,7 +15,7 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://misstube:misstube@misstube.mppcedz.mongodb.net/?retryWrites=true&w=majority"
+TEMP_MONGODB = "mongodb+srv://youtube:youtube@youtube.gv4t1ts.mongodb.net/?retryWrites=true&w=majority"
 
 
 if config.MONGO_DB_URI is None:
