@@ -1,0 +1,117 @@
+#
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+
+
+# Commands in Every Language
+
+# Bot Commands
+PING_COMMAND : ["ping"]
+START_COMMAND : ["start"]
+HELP_COMMAND : ["yardim"]
+SETTINGS_COMMAND : ["settings", "ayarlar"]
+RELOAD_COMMAND : ["admincache", "reload"]
+GSTATS_COMMAND : ["gstats"]
+STATS_COMMAND : ["stats"]
+LANGUAGE_COMMAND : ["lang", "language", "langs"]
+
+# Play Commands
+PLAY_COMMAND : ["oynat", "voynat", "coynat", "cvoynat", "oynatforce", "voynatforce", "coynatforce", "cvoynatforce"]
+PLAYMODE_COMMAND : ["oynatmodu"]
+CHANNELPLAY_COMMAND : ["kanalmodu"]
+STREAM_COMMAND : ["stream", "cstream", "streamforce"]
+
+#Playlists Command
+PLAYLIST_COMMAND : ["listem"]
+DELETEPLAYLIST_COMMAND : ["listemitemizle"]
+
+
+# Tools
+QUEUE_COMMAND : ["sira","cqueue", "player", "cplayer", "playing", "cplaying"]
+SONG_COMMAND : ["indir", "video"]
+BUL_COMMAND : ["bul"]
+LYRICS_COMMAND : ["söz"]
+
+
+# Admin Commands
+AUTH_COMMAND : ["yetkiver"]
+UNAUTH_COMMAND : ["yetkial"]
+AUTHUSERS_COMMAND : ["yetkilistesi"]
+PAUSE_COMMAND : ["durdur", "cdurdur"]
+RESUME_COMMAND : ["devam", "cdevam"]
+MUTE_COMMAND : ["botmute", "cmute"]
+UNMUTE_COMMAND : ["botunmute", "cunmute"]
+STOP_COMMAND : ["son", "end", "cson", "cend"]
+SKIP_COMMAND : ["atla", "catla"]
+SHUFFLE_COMMAND : ["karistir", "ckaristir"]
+LOOP_COMMAND : ["tekrarla", "ctekrarla"]
+SEEK_COMMAND : ["ilerial", "seek", "cilerial", "seekback", "cseekback"]
+RESTART_COMMAND : ["restart"]
+
+# Sudo Users Commaands
+
+# Sudo Command
+ADDSUDO_COMMAND : ["addsudo"]
+DELSUDO_COMMAND : ["delsudo"]
+SUDOUSERS_COMMAND : ["sudolist"]
+ID_COMMAND : ["id"]
+
+#Broadcast 
+BROADCAST_COMMAND : ["reklam"]
+
+#Blacklist chat
+BLACKLISTCHAT_COMMAND : ["grupban"]
+WHITELISTCHAT_COMMAND : ["ungrupban"]
+BLACKLISTEDCHAT_COMMAND : ["grupbanlist"]
+
+# Video Calls Command
+VIDEOLIMIT_COMMAND : ["videolimit"]
+VIDEOMODE_COMMAND : ["videomode"]
+
+#Mantenance
+MAINTENANCE_COMMAND : ["bakım"]
+TEMIZLEME_COMMAND : ["sil"]
+LOGGER_COMMAND : ["logger"]
+SAHIP_COMMAND : ["miss"]
+KOMUTLAR_COMMAND : ["komutlar"]
+
+#Heroku
+GETLOG_COMMAND : ["get_log"]
+GETVAR_COMMAND : ["get_var"]
+DELVAR_COMMAND : ["del_var"]
+SETVAR_COMMAND : ["set_var"]
+USAGE_COMMAND : ["usage"]
+VARS_COMMAND : ["bilgi"]
+
+
+#Basic Bot Commands
+UPDATE_COMMAND : ["update"]
+REBOOT_COMMAND : ["rebootttt"]
+AUTOEND_COMMAND : ["autoend"]
+
+#Private Bot Mode
+AUTHORIZE_COMMAND : ["authorize"]
+UNAUTHORIZE_COMMAND : ["unauthorize"]
+AUTHORIZED_COMMAND : ["authorized"]
+
+#Block Users Command
+BLOCK_COMMAND : ["block"]
+UNBLOCK_COMMAND : ["unblock"]
+BLOCKED_COMMAND : ["blocklist"]
+
+#sPEEDTEST
+SPEEDTEST_COMMAND : ["hiz"]
+
+#Voice chat commands
+ACTIVEVC_COMMAND : ["aktifses"]
+ACTIVEVIDEO_COMMAND : ["aktifvideo"]
+
+#Gban Commands
+GBAN_COMMAND : ["gban"]
+UNGBAN_COMMAND : ["ungban"]
+GBANNED_COMMAND : ["gbannedusers"]
