@@ -22,13 +22,13 @@ def testspeed(m):
     try:
         test = speedtest.Speedtest()
         test.get_best_server()
-        m = m.edit("Running Download SpeedTest")
+        m = m.edit("İndirme Hız Testini Çalıştırma")
         test.download()
-        m = m.edit("Running Upload SpeedTest")
+        m = m.edit("Yükleme Hız Testini Çalıştırma")
         test.upload()
         test.results.share()
         result = test.results.dict()
-        m = m.edit("Sharing SpeedTest Results")
+        m = m.edit("HIZTest Sonuçlarını Paylaşma")
     except Exception as e:
         return m.edit(e)
     return result
@@ -36,16 +36,16 @@ def testspeed(m):
 
 @app.on_message(filters.command(SPEEDTEST_COMMAND) & SUDOERS)
 async def speedtest_function(client, message):
-    m = await message.reply_text("Running Speed test")
+    m = await message.reply_text("BOT Hızı testi")
     loop = asyncio.get_event_loop()
     result = await loop.run_in_executor(None, testspeed, m)
-    output = f"""**Speedtest Results**
+    output = f"""**Hız Testi Sonuçları**
     
-<u>**Client:**</u>
-**__ISP:__** {result['client']['isp']}
-
-<u>**Server:**</u>
-**__YoutubeVCPro:__** {result['server']['name']}
+<u>**SAHİP:**</u>
+**__Sahip:__**  @MissSahip [Mehmet]
+**__Sahip:__**  @YoutubeVcSahip [SupportPro]
+<u>**PİNG:**</u>
+**__Botumuz:__** @YoutubeVcProBot
 **__Ping:__** {result['ping']}"""
     msg = await app.send_photo(
         chat_id=message.chat.id, 
