@@ -364,30 +364,30 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f""" **Bot'un İstatistikleri ve Bilgileri:**
-**İçe Aktarılan Modüller:** {mod}
+    text = f""" **Bot's Stats and Information:**
+**Imported Modules:** {mod}
 **Platform:** {sc}
 **Ram:** {ram}
-**Fiziksel Çekirdekler:** {p_core}
-**Toplam Çekirdek:** {t_core}
-**İşlemci Frekansı:** {cpu_freq}
-**Python Versiyonu :** {pyver.split()[0]}
-**Pyrogram Versiyonu :** {pyrover}
-**Py-TgCalls Sürümü :** {pytgver}
-**Depolama Kullanılabilir:** {total[:4]} GiB
-**Kullanılan Depolama:** {used[:4]} GiB
-**Depolama Solu:** {free[:4]} GiB
-**Sunulan Sohbetler:** {served_chats} 
-**Hizmet Verilen Kullanıcılar:** {served_users} 
-**Engellenmiş kullanıcılar:** {blocked} 
-**Sudo Kullanıcıları:** {sudoers} 
-**Mongo Çalışma Süresi:** {mongouptime[:4]} Days
-**Toplam Veritabanı Boyutu:** {datasize[:6]} Mb
-**Toplam Veritabanı Depolama Alanı:** {storage} Mb
-**Toplam Veritabanı Koleksiyonu:** {collections}
-**Toplam Veritabanı Anahtarları:** {objects}
-**Toplam Veritabanı Sorgusu:** `{query}`
-**Bottan Yapılan Sorgu Sayısı:** `{total_queries} `
+**Physical Cores:** {p_core}
+**Total Cores:** {t_core}
+**Cpu Frequency:** {cpu_freq}
+**Python Version :** {pyver.split()[0]}
+**Pyrogram Version :** {pyrover}
+**Py-TgCalls Version :** {pytgver}
+**Storage Avail:** {total[:4]} GiB
+**Storage Used:** {used[:4]} GiB
+**Storage Left:** {free[:4]} GiB
+**Served Chats:** {served_chats} 
+**Served Users:** {served_users} 
+**Blocked Users:** {blocked} 
+**Sudo Users:** {sudoers} 
+**Mongo Uptime:** {mongouptime[:4]} Days
+**Total DB Size:** {datasize[:6]} Mb
+**Total DB Storage:** {storage} Mb
+**Total DB Collections:** {collections}
+**Total DB Keys:** {objects}
+**Total DB Queries:** `{query}`
+**Total Bot Queries:** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
