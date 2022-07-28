@@ -43,13 +43,9 @@ async def speedtest_function(client, message):
     
 <u>**Client:**</u>
 **__ISP:__** {result['client']['isp']}
-**__Country:__** {result['client']['country']}
-  
+
 <u>**Server:**</u>
-**__Name:__** {result['server']['name']}
-**__Country:__** {result['server']['country']}, {result['server']['cc']}
-**__Sponsor:__** {result['server']['sponsor']}
-**__Latency:__** {result['server']['latency']}  
+**__YoutubeVCPro:__** {result['server']['name']}
 **__Ping:__** {result['ping']}"""
     msg = await app.send_photo(
         chat_id=message.chat.id, 
