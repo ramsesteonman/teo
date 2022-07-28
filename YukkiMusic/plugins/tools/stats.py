@@ -281,21 +281,23 @@ async def overall_stats(client, CallbackQuery, _):
     else:
         ass = "No"
     cm = config.CLEANMODE_DELETE_MINS
-    text = f"""**Bot'un İstatistikleri ve Bilgileri:**
-**İçe Aktarılan Modüller:** {mod}
-**Sunulan Sohbetler:** {served_chats} 
-**Hizmet Verilen Kullanıcılar:** {served_users} 
-**Engellenmiş kullanıcılar:** {blocked} 
-**Sudo Kullanıcıları:** {sudoers} 
+    text = f"""**Bot's Stats and Information:**
+
+**Imported Modules:** {mod}
+**Served Chats:** {served_chats} 
+**Served Users:** {served_users} 
+**Blocked Users:** {blocked} 
+**Sudo Users:** {sudoers} 
     
-**Toplam Sorgu:** {total_queries} 
-**Toplam Asistan:** {assistant}
-**Otomatik Ayrılma Yardımcısı:** {ass}
-**Temiz mod süresi:** {cm} Mins
-**Oynatma Süresi Sınırı:** {play_duration} Mins
-**Şarkı İndirme Sınırı:** {song} Mins
-**Bot'un Sunucu Oynatma Listesi Sınırı:** {playlist_limit}
-**Oynatma Listesi Oynatma Sınırı:** {fetch_playlist}"""
+**Total Queries:** {total_queries} 
+**Total Assistants:** {assistant}
+**Auto Leaving Assistant:** {ass}
+**Cleanmode duration:** {cm} Mins
+
+**Play Duration Limit:** {play_duration} Mins
+**Song Download Limit:** {song} Mins
+**Bot's Server Playlist Limit:** {playlist_limit}
+**Playlist Play Limit:** {fetch_playlist}"""
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(
@@ -365,22 +367,27 @@ async def overall_stats(client, CallbackQuery, _):
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
     text = f""" **Bot's Stats and Information:**
+
 **Imported Modules:** {mod}
 **Platform:** {sc}
 **Ram:** {ram}
 **Physical Cores:** {p_core}
 **Total Cores:** {t_core}
 **Cpu Frequency:** {cpu_freq}
+
 **Python Version :** {pyver.split()[0]}
 **Pyrogram Version :** {pyrover}
 **Py-TgCalls Version :** {pytgver}
+
 **Storage Avail:** {total[:4]} GiB
 **Storage Used:** {used[:4]} GiB
 **Storage Left:** {free[:4]} GiB
+
 **Served Chats:** {served_chats} 
 **Served Users:** {served_users} 
 **Blocked Users:** {blocked} 
 **Sudo Users:** {sudoers} 
+
 **Mongo Uptime:** {mongouptime[:4]} Days
 **Total DB Size:** {datasize[:6]} Mb
 **Total DB Storage:** {storage} Mb
