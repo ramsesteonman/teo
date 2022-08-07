@@ -79,6 +79,7 @@ TEMIZLEME_COMMAND : ["sil"]
 LOGGER_COMMAND : ["logger"]
 SAHIP_COMMAND : ["miss"]
 KOMUTLAR_COMMAND : ["komutlar"]
+CKOMUTLAR_COMMAND : ["ckomutlar"]
 
 #Heroku
 GETLOG_COMMAND : ["get_log"]
