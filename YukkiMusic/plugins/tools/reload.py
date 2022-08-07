@@ -25,7 +25,7 @@ from YukkiMusic.utils.formatters import alpha_to_int
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
 RESTART_COMMAND = get_command("RESTART_COMMAND")
 KOMUTLAR_COMMAND = get_command("KOMUTLAR_COMMAND")
-
+CKOMUTLAR_COMMAND = get_command("CKOMUTLAR_COMMAND")
 
 @app.on_message(
     filters.command(RELOAD_COMMAND)
@@ -150,4 +150,15 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
     & ~BANNED_USERS
 )    
 async def mesaj(client, message: Message):
-  await message.reply("Botun Komutları:\n\n➥ /oynat - Şarkı oynatır.\n✦ /oynat komutu aynı zamanda canlı yayında destekler.(örnek: /oynat kralfm canlı)\n➥ /voynat - Video Oynatır.\n✦ /voynat komutu aynı zamanda canlı yayınıda destekler.(örnek: /voynat kralfm canlı)\n➥ /devam - Akışı devam ettirir.\n➥ /durdur - Akışı duraklatır.\n➥ /son - Akışı Sonlandırır.\n➥ /atla - Diğer parça ya atlar.\n✦ atla komutu aynı zamanda sıraya aldığınız istediğiniz parçaya atlar.( Örnek : /atla 3 -  3. Parçaya atlar )\n➥ /ilerial - Oynatılan parçayı ileri alır.\n✦(örneğin: /ilerial 30 - parçayı 30 saniye ileri alır)\n➥ /seekback - Oynatılan parçayı geri alır.\n✦(örneğin: /seekback 30 - parçayı 30 saniye geriye alır)\n➥ /karistir - Sıraya alınan Parçaları karışık oynatır.\n➥ /tekrarla - oynatılan parçayı istediğiniz kadar tekrar eder.\n✦(örneğin: /tekrarla 4 - Parçayı 4 kez tekrarlar.)\n➥/bul {şarkı - video ismi veya linki} - komutunu kullanarak şarkı veya video indirebilirsiniz. Ve ayrıca kalitesini seçerek:)\n➥ /yetkiver - Grubunuzda yetkisiz üyeye yetki vererek botu kullandırabilirsiz.\n➥ /yetkial - Grubunuzdaki botu kullanan yetkisiz üyeden bot yetkisini alır.\n➥ /yetkilistesi - Komutunu kullanarak Bottan yetkili olan üyelerinizi Görebilirsiniz.\n➥ /oynatmodu - Botun kullanım ayarlarını yapabilirsiniz.\n➥ /restart - komutunu kullanarak admin listenizi güncelleyebilirsiniz.\n\n Detaylı Komutlar İçin @YoutubeVcDestek Kanalına Göz Atınız.")
+  await message.reply("Botun Komutları:\n\n➥ /oynat - Şarkı oynatır.\n✦ /oynat komutu aynı zamanda canlı yayında destekler.(örnek: /oynat kralfm canlı)\n➥ /voynat - Video Oynatır.\n✦ /voynat komutu aynı zamanda canlı yayınıda destekler.(örnek: /voynat kralfm canlı)\n➥ /devam - Akışı devam ettirir.\n➥ /durdur - Akışı duraklatır.\n➥ /son - Akışı Sonlandırır.\n➥ /atla - Diğer parça ya atlar.\n✦ atla komutu aynı zamanda sıraya aldığınız istediğiniz parçaya atlar.( Örnek : /atla 3 -  3. Parçaya atlar )\n➥ /sira - sıraya alınan parçaları gösterir.\n➥ /ilerial - Oynatılan parçayı ileri alır.\n✦(örneğin: /ilerial 30 - parçayı 30 saniye ileri alır)\n➥ /seekback - Oynatılan parçayı geri alır.\n✦(örneğin: /seekback 30 - parçayı 30 saniye geriye alır)\n➥ /karistir - Sıraya alınan Parçaları karışık oynatır.\n➥ /tekrarla - oynatılan parçayı istediğiniz kadar tekrar eder.\n✦(örneğin: /tekrarla 4 - Parçayı 4 kez tekrarlar.)\n➥/bul {şarkı - video ismi veya linki} - komutunu kullanarak şarkı veya video indirebilirsiniz. Ve ayrıca kalitesini seçerek:)\n➥ /yetkiver - Grubunuzda yetkisiz üyeye yetki vererek botu kullandırabilirsiz.\n➥ /yetkial - Grubunuzdaki botu kullanan yetkisiz üyeden bot yetkisini alır.\n➥ /yetkilistesi - Komutunu kullanarak Bottan yetkili olan üyelerinizi Görebilirsiniz.\n➥ /oynatmodu - Botun kullanım ayarlarını yapabilirsiniz.\n➥ /restart - komutunu kullanarak admin listenizi güncelleyebilirsiniz.\n\n Detaylı Komutlar İçin @YoutubeVcDestek Kanalına Göz Atınız.")  
+  
+  
+@app.on_message(
+    filters.command(CKOMUTLAR_COMMAND)
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)    
+async def mesaj(client, message: Message):
+  await message.reply("Botun Kanal Komutları:\n\n➥ /coynat - Şarkı oynatır.\n✦ /coynat komutu aynı zamanda canlı yayında destekler.(örnek: /coynat kralfm canlı)\n➥ /cvoynat - Video Oynatır.\n✦ /cvoynat komutu aynı zamanda canlı yayınıda destekler.(örnek: /cvoynat kralfm canlı)\n➥ /cdevam - Akışı devam ettirir.\n➥ /cdurdur - Akışı duraklatır.\n➥ /cson - Akışı Sonlandırır.\n➥ /catla - Diğer parça ya atlar.\n✦ atla komutu aynı zamanda sıraya aldığınız istediğiniz parçaya atlar.( Örnek : /catla 3 -  3. Parçaya atlar )\n➥ /csira - sıraya alınan parçaları gösterir.\n➥ /cilerial - Oynatılan parçayı ileri alır.\n✦(örneğin: /cilerial 30 - parçayı 30 saniye ileri alır)\n➥ /cseekback - Oynatılan parçayı geri alır.\n✦(örneğin: /cseekback 30 - parçayı 30 saniye geriye alır)\n➥ /ckaristir - Sıraya alınan Parçaları karışık oynatır.\n➥ /ctekrarla - oynatılan parçayı istediğiniz kadar tekrar eder.\n✦(örneğin: /ctekrarla 4 - Parçayı 4 kez tekrarlar.)\n➥ /yetkilistesi - Komutunu kullanarak Bottan yetkili olan üyelerinizi Görebilirsiniz.\n➥ /kanalmodu - Botun kullanım ayarlarını yapabilirsiniz.\n\n Detaylı Komutlar İçin @YoutubeVcDestek Kanalına Göz Atınız.")  
+    
