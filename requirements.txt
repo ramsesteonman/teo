@@ -1,6 +1,5 @@
 aiofiles
 aiohttp
-python3
 asyncio
 dnspython
 ffmpeg-python
