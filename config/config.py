@@ -17,18 +17,18 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", "19976925"))
-API_HASH = getenv("API_HASH", "9b0cde138d64904719aa84a5c040a4ba")
+API_ID = int(getenv("API_ID", "10555778"))
+API_HASH = getenv("API_HASH", "f3c3b702ebc181753d4b559b9b91d3f9")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "5458017561:AAG7ex05_i0lS7w07nqaW2toJV2KfsSiNmA")
+BOT_TOKEN = getenv("BOT_TOKEN", "5446861802:AAEUkd9vTiKZpF1QJp1HdWA_c2xnY0vhqVw")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://melih:melih@cluster0.8r6e9.mongodb.net/deneme?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
+    getenv("DURATION_LIMIT", "240")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001752766753"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001461002395"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "denemeyoutube")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "YOUTUBE PLAYER PRO")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5234611328").split())
+    map(int, getenv("OWNER_ID", "5098688296 1601353177").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -56,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/melih00can10/denemeyoutube",
+    "https://github.com/melih022/guncellemerepo",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -65,30 +65,30 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None
+    "SUPPORT_CHANNEL", "https://t.me/YouTubeVCDestek"
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "5400")
+    getenv("ASSISTANT_LEAVE_TIME", "10400")
 )  # Remember to give value in Seconds
 
 # Time after which bot will suggest random chats about bot commands.
 AUTO_SUGGESTION_TIME = int(
-    getenv("AUTO_SUGGESTION_TIME", "5400")
+    getenv("AUTO_SUGGESTION_TIME", "4400")
 )  # Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
 AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", "True")
 
 # Set it True if you want to bot to suggest about bot commands to random chats of your bots.
-AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
+AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", "False")
 
 # Set it true if you want your bot to be private only [You'll need to allow CHAT_ID via /authorise command then only your bot will play music in that chat.]
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
@@ -135,8 +135,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "BQA_VvLMMoLnfrtgipdwMvlvxbkBxSZ2gVBHwVnHdi2DF4cf-M0KU-zMYxbotfmO31-P1FWQB0K1miAQtSaHXnCN0Gjslvhe0WrpTrhXqNkgXs48vLkqiozVj4hq_nelH6AhOsjJJBYWdpERPcShNBZgqLyDUMey7NrPU-elOAu14bmeBPf8kgx2_3GRduiDC786Yn8Yh4woKrJMZO2Gpbg9ZYrNu2jEeMIVmN8HyL3H9mjkI18wsSiyvv1i80m_AkrOa_xnrLVZR9eCNc8tYcKOnImPHqmECxO7ztlmpvfNzrqYTTsmgVdHwopOrPKopBhG0Clacc2UtwxJW9vGRxGBeuon-QA")
-STRING2 = getenv("STRING_SESSION2", None)
+STRING1 = getenv("STRING_SESSION", "BQAKu0Pa5QOhtyPblZOgxTBqtsJhyNQvS3SPZ2aPhLX5JLJRKOiZ7Zh9lQgXJ6SGjb2cjlc2gFFnivu9tPMEz2oePkDfwnfzh2QVeYIw3whHGFk_DRkouuO4V2jPVzHEul_isDpnn1UQ2_tiNYXmH6FJ6X4j3Kthg7tA8-ZjAQDdqzTDetQJUdQ1tOFDGLNIFqcLB2UpFQ79y6N-N28uDGU5NRnjz6Lup83_Jm40CXyJz-3JsRYwbUAlv0vpvpelpB2Jo3zJdY0_lJdqGLT743Qy0nXkXXcoDPhfzdjIb-KHiCB1hVYiQpmxsIqRRddCwwkaic3IX20AfXYOcOGG9TwuAAAAATqTgQcA")
+STRING2 = getenv("STRING_SESSION2", "BACZ1dQo_P_Y2Bj73hzuJ8FghXlfMoUkDrzEFMXJ1o6s6OnroL93T3CiaUhiYKLeajRr6L4Q7IVXe3bJvfJpkAytJYQ-bx2eNkVD69h1Xjsw29CBWrPHfy9Pgq-y76JZUJkxycFovZSCghEP6Stu4ZbicLf-7q7tTTSPmu7De5oR2Qx54DQOkHfysPxYC7YDKRLCB5zaFdpk-cGBzItKA7kcFHouRCQL9gM3_qvgSYLzHNUwyCmhPxCo6Nzov83yff5V4PADpmNf0qfy9ELRWggHScTEsY2aNSjpvtnIVNEsjlodI3DORB3Na9T8tDjjr5L8q0IP71vQ3-MsXT3m3g0kAAAAAUCOu-YA")
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
@@ -165,7 +165,10 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", None)
+START_IMG_URL = getenv(
+    "START_IMG_URL",
+    "assets/youtube.jpg",
+)
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
