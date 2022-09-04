@@ -72,11 +72,11 @@ SUPPORT_GROUP = getenv(
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "10400")
+    getenv("ASSISTANT_LEAVE_TIME", None)
 )  # Remember to give value in Seconds
 
 # Time after which bot will suggest random chats about bot commands.
@@ -117,7 +117,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "50")
+    getenv("CLEANMODE_MINS", None)
 )  # Remember to give value in Seconds
 
 
@@ -137,7 +137,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 STRING1 = getenv("STRING_SESSION", "BACZ1dQo_P_Y2Bj73hzuJ8FghXlfMoUkDrzEFMXJ1o6s6OnroL93T3CiaUhiYKLeajRr6L4Q7IVXe3bJvfJpkAytJYQ-bx2eNkVD69h1Xjsw29CBWrPHfy9Pgq-y76JZUJkxycFovZSCghEP6Stu4ZbicLf-7q7tTTSPmu7De5oR2Qx54DQOkHfysPxYC7YDKRLCB5zaFdpk-cGBzItKA7kcFHouRCQL9gM3_qvgSYLzHNUwyCmhPxCo6Nzov83yff5V4PADpmNf0qfy9ELRWggHScTEsY2aNSjpvtnIVNEsjlodI3DORB3Na9T8tDjjr5L8q0IP71vQ3-MsXT3m3g0kAAAAAUCOu-YA")
 STRING2 = getenv("STRING_SESSION2", "BQAVWMsX8eBaQhCvSCbTMtUkeJvw-KeL1puvOWxqPqQCaH5p7nqZS-xpwyEgcqaN_6LWBP_xRA3NHIusM8Rn1p9vuVt5zlzEbWJtN1ac0y2SAgeUSVb3hRGfx4BG05u4y2wZX3uMAhgVziwNLrjA7iQ4zVgwQ82uA3cJTDRhYDSLRW017CGRKVbyDsuuNEo7dROTyksJM3Ze6ewA99C8Z523Pa5bGC8VJbgK8oUQQyIib9vifL7-Nk_USgaD-3vl5ruydWBgBWKt8zc12TKm2t0uRszppFj4JN2H_fJVGGyIjAWp7ETfDmZwQ1tNOTpH9R79MqoR5P7-0W3qnDPp3G9dAAAAATqTgQcA")
-STRING3 = getenv("STRING_SESSION3", "BQCyGhHE-vcFdaykp10lqrGg_Y1AqtY8KfTYkSMNxbX8dgCRJQBUgUjwK2ch-1Xpss6GvIZOZLUcRo6FH1sa6OafvOrenQGjwbkphIpIaiZtOaWX8BlAOLjKyUapWy3BxVWwyy6jj77_J84aJYczp7Ye7zap413Nw2Ezn7Aa7DFp01RpnZedKXkhdVt2pt-Ep-B3b624n_-uEKJk1hVD8TdL8OiiPQOVgg0gD20ru44MyvfTtLW0yR9w0gECfJE8J2HDczvDLIO7k6ZWSwrlBVsKrn23-74o_7YL9wcTgSTdhlFDUxM5MomBLMolad07uEm9SwpwX_tp_XJd_h2xYnDvAAAAATFMlk8A")
+STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
