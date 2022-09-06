@@ -246,7 +246,7 @@ async def stream(
                 forceplay=forceplay,
             )
             button = telegram_markup(_, chat_id)
-            run = await app.send_message(
+            await app.send_message(
                 original_chat_id,
                 _["stream_3"].format(
                     title, duration_min, user_name
