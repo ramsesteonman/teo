@@ -240,7 +240,7 @@ queue_5 : "Sırada sadece bir parça var, Lütfen kontrol listesine biraz daha e
 
 
 # All Streaming Lines
-stream_1 : "▶️ **Yayın Başladı**\n\n👉**Talep Eden:** {0}\n\n⌛️**Süre**: {1}"
+stream_1 : "▶️ **Yayın Başladı**\n\n👉**Talep Eden:** {0}\n🔦**Bilgi: **[Buradan]({1}) \n⌛️**Süre**: {2}"
 stream_2 : "▶️ **URL ile Yayına Başladı **\n\n👉**Talep Eden:** {0}"
 stream_3 : "▶️ **Akış Başladı**\n\n**🔘Başlık:** {0}\n⌛️**Süre**: {1}\n👤**İsteyen:** {2}"
 stream_4 : "▶️ **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛️**Süre**: {2}\n👤**İsteyen:** {3}"
