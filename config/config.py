@@ -68,7 +68,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "YOUTUBE PLAYER PRO")
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "5098688296 1601353177").split())
+    map(int, getenv("OWNER_ID", "5098688296 5578818615").split())
 
 )  # Input type must be interger
 
@@ -100,13 +100,13 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/YouTubeVCDestek"
+    "SUPPORT_CHANNEL", "https://t.me/Sohbetmis_muhabbet"
 
 )  # Example:- https://t.me/TheYukki
 
 SUPPORT_GROUP = getenv(
 
-    "SUPPORT_GROUP", None
+    "SUPPORT_GROUP", "https://t.me/YouTubeVCSupport"
 
 )  # Example:- https://t.me/YukkiSupport
 
@@ -118,7 +118,7 @@ AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
 
 AUTO_LEAVE_ASSISTANT_TIME = int(
 
-    getenv("ASSISTANT_LEAVE_TIME", "10400")
+    getenv("ASSISTANT_LEAVE_TIME", "20800")
 
 )  # Remember to give value in Seconds
 
