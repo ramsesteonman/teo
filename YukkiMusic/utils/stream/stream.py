@@ -118,8 +118,9 @@ async def stream(
                 run = await app.send_message(
                     original_chat_id,
                     _["stream_1"].format(
-                        user_name,
+                        user_name, duration_min,
                         f"https://t.me/youtubevcprobot?start=info_{vidid}",
+                        
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -140,7 +141,7 @@ async def stream(
             upl = close_markup(_)
             return await app.send_message(
                 original_chat_id,
-                caption=_["playlist_18"].format(link, position),
+                _["playlist_18"].format(link, position),
                 reply_markup=upl,
             )
     elif streamtype == "youtube":
@@ -197,7 +198,7 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 _["stream_1"].format(
-                    user_name,
+                    user_name, duration_min,
                     f"https://t.me/{app.username}?start=info_{vidid}",
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -361,7 +362,7 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 _["stream_1"].format(
-                    user_name,
+                    user_name, duration_min,
                     f"https://t.me/{app.username}?start=info_{vidid}",
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
