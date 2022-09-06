@@ -246,7 +246,7 @@ async def stream(
                 forceplay=forceplay,
             )
             button = telegram_markup(_, chat_id)
-            await app.send_message(
+            run = await app.send_message(
                 original_chat_id,
                 _["stream_3"].format(
                     title, duration_min, user_name
@@ -303,7 +303,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                caption=_["stream_4"].format(
+                _["stream_4"].format(
                     title, link, duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
