@@ -22,13 +22,13 @@ def testspeed(m):
     try:
         test = speedtest.Speedtest()
         test.get_best_server()
-        m = m.edit("İndirme Hız Testini Çalıştırma")
+        m = m.edit("Running Download SpeedTest")
         test.download()
-        m = m.edit("Yükleme Hız Testini Çalıştırma")
+        m = m.edit("Running Upload SpeedTest")
         test.upload()
         test.results.share()
         result = test.results.dict()
-        m = m.edit("HIZTest Sonuçlarını Paylaşma")
+        m = m.edit("Sharing SpeedTest Results")
     except Exception as e:
         return m.edit(e)
     return result
@@ -57,5 +57,3 @@ async def speedtest_function(client, message):
         caption=output
     )
     await m.delete()
-
-
