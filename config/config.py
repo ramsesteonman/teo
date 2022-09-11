@@ -34,7 +34,7 @@ API_HASH = getenv("API_HASH", "f3c3b702ebc181753d4b559b9b91d3f9")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "5446861802:AAH4E_alivTM3S18jE3jPAE8LMGMiHHGW_k")
+BOT_TOKEN = getenv("BOT_TOKEN", "5446861802:AAHj34aD5vzpMbNCRT1ZoKoxbr_VZn30-0s")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 
@@ -244,13 +244,7 @@ autoclean = []
 
 # Images
 
-START_IMG_URL = getenv(
-
-    "START_IMG_URL",
-
-    "assets/youtube.jpg",
-
-)
+START_IMG_URL = getenv("START_IMG_URL", None)
 
 PING_IMG_URL = getenv(
 
