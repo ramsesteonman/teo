@@ -1,5 +1,5 @@
 aiofiles
-aiohttp==3.3.2
+aiohttp==3.6.2
 asyncio
 dnspython
 ffmpeg-python
