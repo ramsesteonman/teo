@@ -1,6 +1,6 @@
 aiofiles
 aiohttp==3.6.2
-asyncio
+asyncio==3.4.2
 dnspython
 ffmpeg-python
 gitpython
