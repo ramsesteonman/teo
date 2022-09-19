@@ -58,7 +58,7 @@ async def dont_do_this():
                         language = await get_lang(x)
                         _ = get_string(language)
                     except:
-                        _ = get_string("en")
+                        _ = get_string("tr")
                     string = random.choice(strings)
                     previous = suggestor.get(x)
                     if previous:
