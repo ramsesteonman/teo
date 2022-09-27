@@ -68,7 +68,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "YOUTUBE PLAYER PRO")
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "5098688296 5578818615").split())
+    map(int, getenv("OWNER_ID", "5608007149 5578818615 5107386124").split())
 
 )  # Input type must be interger
 
