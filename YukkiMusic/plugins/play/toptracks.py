@@ -18,8 +18,7 @@ from YukkiMusic.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
 from YukkiMusic.utils.decorators.language import languageCB
 from YukkiMusic.utils.inline.playlist import (botplaylist_markup,
-                                              failed_top_markup,
-                                              top_play_markup)
+                                              failed_top_markup)
 from YukkiMusic.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
