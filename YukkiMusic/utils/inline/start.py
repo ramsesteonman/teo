@@ -22,8 +22,6 @@ def start_pannel(_):
                 text=_["S_B_1"],
                 url=f"https://t.me/{app.username}?start=help",
             ),
-        ],
-        [
             InlineKeyboardButton(
                 text=_["S_B_2"], callback_data="settings_helper"
             ),
@@ -35,8 +33,6 @@ def start_pannel(_):
                 InlineKeyboardButton(
                     text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
                 ),
-            ],
-            [
                 InlineKeyboardButton(
                     text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
                 ),
@@ -66,10 +62,9 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_5"],
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text=_["S_B_8"], callback_data="settings_back_helper"
             )
-        ]  
+        ]
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
@@ -77,8 +72,6 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 InlineKeyboardButton(
                     text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
                 ),
-            ],
-            [
                 InlineKeyboardButton(
                     text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
                 ),
@@ -104,7 +97,8 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons.append(
         [
             InlineKeyboardButton(
-                text=_["S_B_8"], callback_data="settings_back_helper"
+                text=_["S_B_5"],
+                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ]
     )
@@ -134,5 +128,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                     ),
                 ]
             )
-
+    buttons.append(
+        [InlineKeyboardButton(text=_["ST_B_6"], callback_data="LG")]
+    )
     return buttons
