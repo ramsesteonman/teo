@@ -248,7 +248,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                caption=_["stream_3"].format(
+                _["stream_3"].format(
                     title, duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -301,12 +301,9 @@ async def stream(
             if video:
                 await add_active_video_chat(chat_id)
             button = telegram_markup(_, chat_id)
-            run = await app.send_photo(
+            run = await app.send_message(
                 original_chat_id,
-                photo=config.TELEGRAM_VIDEO_URL
-                if video
-                else config.TELEGRAM_AUDIO_URL,
-                caption=_["stream_4"].format(
+                _["stream_4"].format(
                     title, link, duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -415,7 +412,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                caption=_["stream_2"].format(user_name),
+                _["stream_2"].format(user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
