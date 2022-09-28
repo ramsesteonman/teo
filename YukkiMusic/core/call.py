@@ -431,7 +431,7 @@ class Call(PyTgCalls):
                 run = await app.send_message(
                     original_chat_id,
                     _["stream_1"].format(
-                        title, duration_min, user,
+                        title, check[0]["dur"], user,
                         f"https://t.me/{app.username}?start=info_{videoid}",
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
@@ -512,7 +512,7 @@ class Call(PyTgCalls):
                     run = await app.send_message(
                         original_chat_id,
                         _["stream_1"].format(
-                            title, duration_min, user,
+                            title, check[0]["dur"], user,
                             f"https://t.me/{app.username}?start=info_{videoid}",
                         ),
                         reply_markup=InlineKeyboardMarkup(button),
