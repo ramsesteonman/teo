@@ -118,9 +118,8 @@ async def stream(
                 run = await app.send_message(
                     original_chat_id,
                     _["stream_1"].format(
-                        user_name, duration_min,
-                        
-                        
+                        title, duration_min, user_name,
+                        f"https://t.me/youtubevcprobot?start=info_{vidid}",
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -141,7 +140,7 @@ async def stream(
             upl = close_markup(_)
             return await app.send_message(
                 original_chat_id,
-                _["playlist_18"].format(link, position),
+                caption=_["playlist_18"].format(link, position),
                 reply_markup=upl,
             )
     elif streamtype == "youtube":
@@ -198,8 +197,8 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 _["stream_1"].format(
-                    user_name, duration_min,
-                    
+                    title, duration_min, user_name,
+                    f"https://t.me/{app.username}?start=info_{vidid}",
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
@@ -249,7 +248,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                _["stream_3"].format(
+                caption=_["stream_3"].format(
                     title, duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -304,7 +303,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                _["stream_4"].format(
+                caption=_["stream_4"].format(
                     title, link, duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -362,7 +361,7 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 _["stream_1"].format(
-                    user_name, duration_min,
+                    title, duration_min, user_name,
                     f"https://t.me/{app.username}?start=info_{vidid}",
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -413,7 +412,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                _["stream_2"].format(user_name),
+                caption=_["stream_2"].format(user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
