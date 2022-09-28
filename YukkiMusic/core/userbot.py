@@ -63,7 +63,7 @@ class Userbot(Client):
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "Asistan Başlatıldı"
+                    config.LOG_GROUP_ID, "Asistan 1 Başlatıldı"
                 )
             except:
                 LOGGER(__name__).error(
@@ -92,7 +92,7 @@ class Userbot(Client):
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "Asistan Başlatıldı"
+                    config.LOG_GROUP_ID, "Asistan 2 Başlatıldı"
                 )
             except:
                 LOGGER(__name__).error(
@@ -115,15 +115,13 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("TeamYukki")
-                await self.three.join_chat("TheYukki")
-                await self.three.join_chat("YukkiSupport")
+                await self.three.join_chat("MissDuyuru")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "Assistan 3 Başlatıldı"
                 )
             except:
                 LOGGER(__name__).error(
@@ -146,15 +144,13 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("TeamYukki")
-                await self.four.join_chat("TheYukki")
-                await self.four.join_chat("YukkiSupport")
+                await self.four.join_chat("MissDuyuru")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "Assistant 4 Başladı"
                 )
             except:
                 LOGGER(__name__).error(
