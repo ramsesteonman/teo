@@ -19,6 +19,7 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
+from YukkiMusic.misc import SUDOERS
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
 from YukkiMusic import YouTube, app
@@ -45,12 +46,7 @@ GSTATS_COMMAND = get_command("GSTATS_COMMAND")
 STATS_COMMAND = get_command("STATS_COMMAND")
 
 
-@app.on_message(
-    filters.command(STATS_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(filters.command(STATS_COMMAND) & SUDOERS)
 @language
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(
@@ -63,12 +59,7 @@ async def stats_global(client, message: Message, _):
     )
 
 
-@app.on_message(
-    filters.command(GSTATS_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(filters.command(GSTATS_COMMAND) & SUDOERS)
 @language
 async def gstats_global(client, message: Message, _):
     mystic = await message.reply_text(_["gstats_1"])
