@@ -138,8 +138,9 @@ async def stream(
                 car, randint(100, 10000000)
             )
             upl = close_markup(_)
-            return await app.send_message(
+            return await app.send_photo(
                 original_chat_id,
+                photo=carbon,
                 caption=_["playlist_18"].format(link, position),
                 reply_markup=upl,
             )
