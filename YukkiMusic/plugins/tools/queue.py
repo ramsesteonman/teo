@@ -194,21 +194,21 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     basic[videoid] = False
     buttons = queue_back_markup(_, what)
     med = InputMediaPhoto(
-        media="https://telegra.ph//file/6f7d35131f69951c74ee5.jpg",
+        media="https://telegra.ph/Tt-10-01-3",
         caption=_["queue_1"],
     )
     await CallbackQuery.edit_message_media(media=med)
     j = 0
-    msg = ""
+    msg = "Oynatılan"
     for x in got:
         j += 1
         if j == 1:
-            msg += f'Çalmakta:\n\n🏷Başlık: {x["title"]}\nSüre: {x["dur"]}\nTalep Eden: {x["by"]}\n\n'
+            msg += f'Şarkı:\n\n🏷Başlık: {x["title"]}\nSüre: {x["dur"]}\nTalep Eden: {x["by"]}\n\n'
         elif j == 2:
-            msg += f'Sıraya alındı:\n\n🏷Başlık: {x["title"]}\nSüre: {x["dur"]}\nTalep Eden: {x["by"]}\n\n'
+            msg += f'Sıradaki Parcalar:\n\n🏷Başlık: {x["title"]}\nSüre: {x["dur"]}\nTalep Eden: {x["by"]}\n\n'
         else:
             msg += f'🏷Başlık: {x["title"]}\nSüre: {x["dur"]}\nTalep Eden: {x["by"]}\n\n'
-    if "Queued" in msg:
+    if "Sıradaki Parcalar" in msg:
         if len(msg) < 700:
             await asyncio.sleep(1)
             return await CallbackQuery.edit_message_text(
@@ -277,9 +277,9 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
         else:
             IMAGE = get_image(videoid)
     send = (
-        "**⌛️Süre:** Bilinmeyen Süreli Yayın\n\nSıraya alınmış tüm listeyi görmek için aşağıdaki düğmeyi tıklayın."
+        "**⌛️Duration:** Bilinmeyen Süreli Yayın\n\nSıraya alınmış tüm listeyi görmek için aşağıdaki Butona tıklayın."
         if DUR == "Unknown"
-        else "\nTüm sıraya alınmış listeyi almak için aşağıdaki düğmeye tıklayın."
+        else "\nTüm sıraya alınmış listeyi almak için aşağıdaki Butona tıklayın."
     )
     cap = f"""**{config.MUSIC_BOT_NAME} Oynatılıyor**
 
