@@ -35,7 +35,7 @@ async def admins(cli, message: Message, _, chat_id):
     state = message.text.split(None, 1)[1].strip()
     if state.isnumeric():
         state = int(state)
-        if 1 <= state <= 10:
+        if 1 <= state <= 30:
             got = await get_loop(chat_id)
             if got != 0:
                 state = got + state
