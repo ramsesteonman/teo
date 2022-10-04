@@ -50,7 +50,7 @@ STOP_COMMAND : ["son", "end", "cson", "cend"]
 SKIP_COMMAND : ["atla", "catla"]
 SHUFFLE_COMMAND : ["karistir", "ckaristir"]
 LOOP_COMMAND : ["tekrarla", "ctekrarla"]
-SEEK_COMMAND : ["ilerial", "cilerial", "gerial", "cgerial"]
+SEEK_COMMAND : ["ileri", "cileri", "gerial", "cgerial"]
 RESTART_COMMAND : ["restart"]
 
 # Sudo Users Commaands
