@@ -46,7 +46,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     duration_played = int(playing[0]["played"])
     duration_to_skip = int(query)
     duration = playing[0]["dur"]
-    if message.command[0][-4] == "r":
+    if message.command[0][-2] == "a":
         if (duration_played - duration_to_skip) <= 10:
             return await message.reply_text(
                 _["admin_31"].format(
@@ -79,7 +79,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         )
     except:
         return await mystic.edit_text(_["admin_34"])
-    if message.command[0][-4] == "r":
+    if message.command[0][-2] == "a":
         db[chat_id][0]["played"] -= duration_to_skip
     else:
         db[chat_id][0]["played"] += duration_to_skip
