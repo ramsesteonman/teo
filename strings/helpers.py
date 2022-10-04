@@ -14,9 +14,9 @@ HELP_1 = """✅**<u>Sadece Gruptaki Adminler İçin Komutlar:</u>**✅
 ➥ /son - Akışı Sonlandırır.
 ➥ /atla - Diğer parça ya atlar.
 ✦ atla komutu aynı zamanda sıraya aldığınız istediğiniz parçaya atlar.( Örnek : /atla 3 -  3. Parçaya atlar )
-➥ /ilerial - Oynatılan parçayı ileri alır.
-✦(örneğin: /ilerial 30 - parçayı 30 saniye ileri alır)
-➥  /seekback - Oynatılan parçayı geri alır.
+➥ /ileri - Oynatılan parçayı ileri alır.
+✦(örneğin: /ileri 30 - parçayı 30 saniye ileri alır)
+➥  /gerial - Oynatılan parçayı geri alır.
 ✦(örneğin: /gerial 30 - parçayı 30 saniye geriye alır)
 ➥ /karistir - Sıraya alınan Parçaları karışık oynatır.
 ➥ /tekrarla - oynatılan parçayı istediğiniz kadar tekrar eder.
