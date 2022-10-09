@@ -43,7 +43,7 @@ async def lrsearch(client, message: Message, _):
         return await message.reply_text(_["lyrics_1"])
     title = message.text.split(None, 1)[1]
     m = await message.reply_text(_["lyrics_2"])
-    S = y.search_song(title, get_full_info=False)
+    S = y.search_song(title, get_full_info=True)
     if S is None:
         return await m.edit(_["lyrics_3"].format(title))
     ran_hash = "".join(
