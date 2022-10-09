@@ -141,7 +141,7 @@ async def stream(
             return await app.send_photo(
                 original_chat_id,
                 photo=carbon,
-                _["playlist_18"].format(link, position),
+                caption=_["playlist_18"].format(link, position),
                 reply_markup=upl,
             )
     elif streamtype == "youtube":
@@ -305,7 +305,7 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 _["stream_4"].format(
-                    title, link, duration_min, user_name
+                    title, duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
