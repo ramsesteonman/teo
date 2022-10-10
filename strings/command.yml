@@ -21,10 +21,10 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["oynat", "voynat", "coynat", "cvoynat", "oynatforce", "voynatforce", "coynatforce", "cvoynatforce"]
+PLAY_COMMAND : ["oynat", "voynat", "koynat", "kvoynat", "oynathemen", "voynathemen", "koynathemen", "kvoynathemen"]
 PLAYMODE_COMMAND : ["oynatmodu"]
 CHANNELPLAY_COMMAND : ["kanalmodu"]
-STREAM_COMMAND : ["stream", "cstream", "streamforce"]
+STREAM_COMMAND : ["stream", "kstream", "canlıhemen"]
 
 #Playlists Command
 PLAYLIST_COMMAND : ["listem"]
@@ -33,7 +33,7 @@ DELETEPLAYLIST_COMMAND : ["listemitemizle"]
 
 # Tools
 QUEUE_COMMAND : ["sira","csira", "player", "cplayer", "playing", "cplaying"]
-SONG_COMMAND : ["indirsss", "videosss"]
+SONG_COMMAND : ["bul", "video"]
 BUL_COMMAND : ["bul"]
 LYRICS_COMMAND : ["söz"]
 
@@ -42,15 +42,15 @@ LYRICS_COMMAND : ["söz"]
 AUTH_COMMAND : ["yetkiver"]
 UNAUTH_COMMAND : ["yetkial"]
 AUTHUSERS_COMMAND : ["yetkilistesi"]
-PAUSE_COMMAND : ["durdur", "cdurdur"]
-RESUME_COMMAND : ["devam", "cdevam"]
-MUTE_COMMAND : ["botmute", "cmute"]
-UNMUTE_COMMAND : ["botunmute", "cunmute"]
-STOP_COMMAND : ["son", "end", "cson", "cend"]
-SKIP_COMMAND : ["atla", "catla"]
-SHUFFLE_COMMAND : ["karistir", "ckaristir"]
-LOOP_COMMAND : ["tekrarla", "ctekrarla"]
-SEEK_COMMAND : ["ileri", "cileri", "gerial", "cgerial"]
+PAUSE_COMMAND : ["durdur", "kdurdur"]
+RESUME_COMMAND : ["devam", "kdevam"]
+MUTE_COMMAND : ["botmute", "kmute"]
+UNMUTE_COMMAND : ["botunmute", "kunmute"]
+STOP_COMMAND : ["son", "end", "kson", "kend"]
+SKIP_COMMAND : ["atla", "katla"]
+SHUFFLE_COMMAND : ["karistir", "kkaristir"]
+LOOP_COMMAND : ["tekrarla", "ktekrarla"]
+SEEK_COMMAND : ["ileri", "kileri", "gerial", "kgerial"]
 RESTART_COMMAND : ["restart"]
 
 # Sudo Users Commaands
@@ -79,7 +79,7 @@ TEMIZLEME_COMMAND : ["sil"]
 LOGGER_COMMAND : ["logger"]
 SAHIP_COMMAND : ["miss"]
 KOMUTLAR_COMMAND : ["komutlar"]
-CKOMUTLAR_COMMAND : ["ckomutlar"]
+CKOMUTLAR_COMMAND : ["kkomutlar"]
 
 #Heroku
 GETLOG_COMMAND : ["get_log"]
@@ -96,8 +96,8 @@ REBOOT_COMMAND : ["rebootttt"]
 AUTOEND_COMMAND : ["autoend"]
 
 #Private Bot Mode
-AUTHORIZE_COMMAND : ["grupyetki"]
-UNAUTHORIZE_COMMAND : ["ungrupyetki"]
+AUTHORIZE_COMMAND : ["grupizin"]
+UNAUTHORIZE_COMMAND : ["ungrupizin"]
 AUTHORIZED_COMMAND : ["grupliste"]
 
 #Block Users Command
