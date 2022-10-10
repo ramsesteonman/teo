@@ -56,7 +56,7 @@ def get_duration(playing):
 )
 @language
 async def ping_com(client, message: Message, _):
-    if message.command[0][0] == "c":
+    if message.command[0][0] == "k":
         chat_id = await get_cmode(message.chat.id)
         if chat_id is None:
             return await message.reply_text(_["setting_12"])
@@ -109,12 +109,12 @@ async def ping_com(client, message: Message, _):
 🙍‍♂️**Talep Eden:** {user}
 {send}"""
     upl = (
-        queue_markup(_, DUR, "c" if cplay else "g", videoid)
+        queue_markup(_, DUR, "k" if cplay else "g", videoid)
         if DUR == "Unknown"
         else queue_markup(
             _,
             DUR,
-            "c" if cplay else "g",
+            "k" if cplay else "g",
             videoid,
             seconds_to_min(got[0]["played"]),
             got[0]["dur"],
@@ -135,7 +135,7 @@ async def ping_com(client, message: Message, _):
                                 buttons = queue_markup(
                                     _,
                                     DUR,
-                                    "c" if cplay else "g",
+                                    "k" if cplay else "g",
                                     videoid,
                                     seconds_to_min(
                                         db[chat_id][0]["played"]
