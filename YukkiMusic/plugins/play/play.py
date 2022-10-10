@@ -396,7 +396,7 @@ async def play_commnd(
                     track_id,
                     user_id,
                     "v" if video else "a",
-                    "c" if channel else "g",
+                    "k" if channel else "g",
                     "f" if fplay else "d",
                 )
                 return await mystic.edit_text(
@@ -440,7 +440,7 @@ async def play_commnd(
                 ran_hash,
                 message.from_user.id,
                 plist_type,
-                "c" if channel else "g",
+                "k" if channel else "g",
                 "f" if fplay else "d",
             )
             await mystic.delete()
@@ -459,7 +459,7 @@ async def play_commnd(
                     message.from_user.id,
                     query,
                     0,
-                    "c" if channel else "g",
+                    "k" if channel else "g",
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
@@ -478,7 +478,7 @@ async def play_commnd(
                     _,
                     track_id,
                     message.from_user.id,
-                    "c" if channel else "g",
+                    "k" if channel else "g",
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
@@ -537,7 +537,7 @@ async def play_music(client, CallbackQuery, _):
             track_id,
             CallbackQuery.from_user.id,
             mode,
-            "c" if cplay == "c" else "g",
+            "k" if cplay == "k" else "g",
             "f" if fplay else "d",
         )
         return await mystic.edit_text(
