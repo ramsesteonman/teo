@@ -74,7 +74,7 @@ admin_34 : "Mevcut akış aranamadı."
 # Bot 
 # Start
 start_1 : "Beni {0} Grubuna davet ettiğiniz için teşekkürler.\n\nHerhangi bir yardım için destek grubumuza veya kanalımıza göz atın.."
-start_2 : "💥Merhaba, Ben Sesli Sohbette Müzik Ve Video izlemeniz İçin Yapıldım.Grubunuza Alıp Kullanabilirsiniz.\n\n**Not: Botumuz Grubunuza Hiçbir Media(Resim) Atmayacaktır.**"
+start_2 : "💥Merhaba, Bu Bot Özel Bir Bot'tur.Bu Botu Gruplarınızda Kullanabilmek için @MissSahip veya @Atomfast PM atmanız Gerekir.**"
 start_3 : "Botumuzun Adı {0}\n\n**Botun Çalışması İçin Gerekli Adımlar**:\n1-)Mesaj Silme\n2-)Görüntülü Sohbet Yönetme\n3-)Bağlantı İle Davet Etme\nBot İçin Bu Yetkileri Vermelisiniz.\n💡 Komutlarım İçin /komutlar Yazarak Tüm Komutları Görebilirsiniz.\n\n**🎶 KEYİFLİ DİNLEMELER 🎶**"
 start_4 : "{0} **Botun Kurucusu** -> {1} <- **Grubunuza Katıldı**."
 start_5 : "{0} **Botun Yetkili Kullanıcısı** -> {1} <- **Grubunuza Katıldı**."
