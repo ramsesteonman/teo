@@ -20,7 +20,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/youtubevcmuzik",
+                url=f"https://t.me/MissMuzikKayit",
             )
         ],
         [
@@ -56,7 +56,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/youtubevcmuzik",
+                url=f"https://t.me/MissMuzikKayit",
             )
         ],
     ]
@@ -70,7 +70,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/youtubevcmuzik",
+                url=f"https://t.me/MissMuzikKayit",
             )
         ],
         [
@@ -96,7 +96,7 @@ def telegram_markup(_, chat_id):
          [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/youtubevcmuzik",
+                url=f"https://t.me/MissMuzikKayit",
             )
          ], 
          [
@@ -166,7 +166,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/youtubevcmuzik",
+                url=f"https://t.me/MissMuzikKayit",
             )
         ],
         [
