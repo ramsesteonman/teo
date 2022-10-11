@@ -305,7 +305,7 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 _["stream_4"].format(
-                    title, duration_min, user_name
+                    title, link, duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
