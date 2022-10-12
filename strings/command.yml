@@ -32,7 +32,7 @@ DELETEPLAYLIST_COMMAND : ["listemitemizle"]
 
 
 # Tools
-QUEUE_COMMAND : ["sira","csira", "player", "cplayer", "playing", "cplaying"]
+QUEUE_COMMAND : ["sira","ksira", "player", "cplayer", "playing", "kplaying"]
 SONG_COMMAND : ["bbulll", "vvideoo"]
 BUL_COMMAND : ["bulllll"]
 LYRICS_COMMAND : ["söz"]
