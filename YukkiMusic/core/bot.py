@@ -10,7 +10,6 @@
 import sys
 
 from pyrogram import Client
-from pyrogram.types import BotCommand
 
 import config
 
@@ -19,7 +18,7 @@ from ..logging import LOGGER
 
 class YukkiBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Bot Aktif")
+        LOGGER(__name__).info(f"Misbot Başlatılıyor")
         super().__init__(
             "YukkiMusicBot",
             api_id=config.API_ID,
@@ -34,32 +33,13 @@ class YukkiBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "Bot Aktif"
+                config.LOG_GROUP_ID, "MissMuzik Aktif"
             )
         except:
             LOGGER(__name__).error(
                 "Bot, günlük Grubuna erişemedi. Botunuzu günlük kanalınıza eklediğinizden ve yönetici olarak terfi ettiğinizden emin olun.!"
             )
             sys.exit()
-        if config.SET_CMDS == str(True):
-            try:
-                await self.set_bot_commands(
-                    [
-                        BotCommand("ping", "Botun Aktif olup olmadığını gösterir."),
-                        BotCommand("oynat", "Sarkı oynatır"),
-                        BotCommand("atla", "Akış Değisir"),
-                        BotCommand("durdur", "akısı durdurur."),
-                        BotCommand("devam", "Akısı Devam ettirir"),
-                        BotCommand("son", "Sonlandırır ve Listesi temizler."),
-                        BotCommand("karistir", "listeyi random olarak calar."),
-                        BotCommand("oynatmodu", "Ayarlar Yapabilirsin"),
-                        BotCommand("ayarlar", "Bot genel Ayarları icin.")
-                        ]
-                    )
-            except:
-                pass
-        else:
-            pass
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
@@ -70,4 +50,4 @@ class YukkiBot(Client):
             self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
-        LOGGER(__name__).info(f"MusicBot Olarak basladi {self.name}")
+        LOGGER(__name__).info(f"MissMusicBot olarak başladı {self.name}")
