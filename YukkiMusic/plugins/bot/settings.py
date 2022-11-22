@@ -173,7 +173,7 @@ async def without_Admin_rights(client, CallbackQuery, _):
         try:
             return await CallbackQuery.answer(
                 _["setting_9"].format(CLEANMODE_DELETE_MINS),
-                show_alert=True,
+                show_alert=False,
             )
         except:
             return
