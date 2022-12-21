@@ -21,10 +21,10 @@ API_ID = int(getenv("API_ID", "4723828"))
 API_HASH = getenv("API_HASH", "a41aa20922b2b9ed39ecbcffcd452154")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "5715936867:AAEvplFt2NR9dpsgibN0mNZeJ_dg_jPNESk")
+BOT_TOKEN = getenv("BOT_TOKEN", "5807124690:AAFxwdMtdp3GWWWMafj510QHl0QmHd2mKr0")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://melih1:melih1@missmuzik.uahdd7v.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://videomuzik:112233mmm@cluster0.g6xw4qo.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -40,11 +40,11 @@ SONG_DOWNLOAD_DURATION = int(
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001806277858"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "MissMuzikBot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝐕𝐢𝐝𝐞𝐨 𝐌𝐮𝐬𝐢𝐜")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5925450277 5578818615 5107386124").split())
+    map(int, getenv("OWNER_ID", "5925450277 5774482706").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -56,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/melih022/youtubepre",
+    "https://github.com/melih022/videomuzik",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -65,7 +65,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/MissMuzikDestek"
+    "SUPPORT_CHANNEL", "https://t.me/VideoMuzikDestek"
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
@@ -91,7 +91,7 @@ AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", "True")
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", "False")
 
 # Set it true if you want your bot to be private only [You'll need to allow CHAT_ID via /authorise command then only your bot will play music in that chat.]
-PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", "True")
+PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 # Time sleep duration For Youtube Downloader
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
@@ -117,7 +117,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "10000")
+    getenv("CLEANMODE_MINS", "20800")
 )  # Remember to give value in Seconds
 
 
