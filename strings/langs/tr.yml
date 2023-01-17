@@ -63,7 +63,7 @@ admin_24 : "**Kullanım:**\n/tekrarla [enable/disable] veya [1-10 arası sayı]\
 admin_25 : "{0} tarafından Oynatılan Parça İsteğiniz Üzere **{1}** Kez Tekrarlanacaktır 🔁 Bot Şuan Sesli Sohbette Oynatılan Yayını **{1}** kez tekrarlayacaktır 🔁"
 admin_26 : "Tekrarla oynatma için lütfen 1-10 arasındaki sayıları kullanın"
 admin_27 : "Tekrarla Oynatma devre dışı bırakıldı"
-admin_28 : "**kullanım:**\n/ilerial or /gerial [Duration in seconds]"
+admin_28 : "**kullanım:**\n/ileri Veya /gerial [Saniye Belirtin!]"
 admin_29 : "**Lütfen arama yapmak için 10-20-30 saniye gibi sayısal süre saniyelerini kullanın.**"
 admin_30 : "Üzgünüz, şu anda oynatılan akışı arayamazsınız. Yalnızca atlanabilir veya durdurulabilir."
 admin_31 : "Bot, verilen sürenin yüksek olması nedeniyle arama yapamıyor. Daha düşük bir süre aramanız ve aramadan sonra 10 saniyelik bir sürenin kaldığını hatırlamanız gerekir.\n\nŞu anda oynanıyor** {0}** dakika üzerinden **{1}** dakika"
