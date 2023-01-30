@@ -31,6 +31,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
+                text=_["PL_B_14"],
+                url=f"https://t.me/tumdizivefilm",
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
@@ -71,6 +77,12 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 url=f"https://t.me/VideoMuzikKomutlar",
             )
         ],
+        [
+            InlineKeyboardButton(
+                text=_["PL_B_14"],
+                url=f"https://t.me/tumdizivefilm",
+            )
+        ],
     ]
     return buttons
 
@@ -89,6 +101,12 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text=_["PL_B_13"],
                 url=f"https://t.me/VideoMuzikKomutlar",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["PL_B_14"],
+                url=f"https://t.me/tumdizivefilm",
             )
         ],
         [
@@ -121,6 +139,12 @@ def telegram_markup(_, chat_id):
             InlineKeyboardButton(
                 text=_["PL_B_13"],
                 url=f"https://t.me/VideoMuzikKomutlar",
+            )
+         ],
+         [
+            InlineKeyboardButton(
+                text=_["PL_B_14"],
+                url=f"https://t.me/tumdizivefilm",
             )
          ],
          [
@@ -197,6 +221,12 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
             InlineKeyboardButton(
                 text=_["PL_B_13"],
                 url=f"https://t.me/VideoMuzikKomutlar",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["PL_B_14"],
+                url=f"https://t.me/tumdizivefilm",
             )
         ],
         [
