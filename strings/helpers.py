@@ -33,7 +33,7 @@ HELP_2 = """✅<u>**Oynat Komutları:**</u>✅
 
 ➥ /oynat - Şarkı oynatır.
 ✦ /oynat komutu aynı zamanda canlı yayında destekler.(örnek: /oynat kralfm canlı)
-➥ /oynatforce - Sesli sohbette çalınan parçayı durdurur ve sırayı bozmadan temizlemeden aranan parçayı anında çalmaya başlar.
+➥ /oynathemen - Sesli sohbette çalınan parçayı durdurur ve sırayı bozmadan temizlemeden aranan parçayı anında çalmaya başlar.
 ➥ /voynat - Video Oynatır.
 ✦ /voynat komutu aynı zamanda canlı yayınıda destekler.(örnek: /vplay kralfm canlı)
 ➥ /komutlar - Bu komutu Grubunuzda yazarak komutları görebilirsiniz.
