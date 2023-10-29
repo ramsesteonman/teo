@@ -17,11 +17,11 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", "26854821"))
-API_HASH = getenv("API_HASH", "eef1ef1773456d0ec88a1b5f276330a7")
+API_ID = int(getenv("API_ID", "24814041"))
+API_HASH = getenv("API_HASH", "27068218e660a83859de70e711df9311")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "6249652960:AAHfn_5t0MmbLMdEyPByem-vBnjR2NryHDM")
+BOT_TOKEN = getenv("BOT_TOKEN", "6435017587:AAF7kGfsX-G-kkDWn1WiS6r_X269hXs8yCw")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://teo:205400.teo@cluster0.a2ewlqj.mongodb.net/?retryWrites=true&w=majority")
@@ -37,10 +37,10 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001520514910"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002022758329"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Radiovideomusicbot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Kafataslakmusicbot")
 
 # Your User ID.
 OWNER_ID = list(
@@ -65,7 +65,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/radiomusickomutlar"
+    "SUPPORT_CHANNEL", "https://t.me/kafataslak"
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
