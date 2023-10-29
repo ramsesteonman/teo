@@ -18,7 +18,7 @@ from ..logging import LOGGER
 
 class YukkiBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Misbot Başlatılıyor")
+        LOGGER(__name__).info(f"Kafataslak başlatılıyor")
         super().__init__(
             "YukkiMusicBot",
             api_id=config.API_ID,
@@ -33,7 +33,7 @@ class YukkiBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "MissMuzik Aktif"
+                config.LOG_GROUP_ID, "Kafa müzik aktif"
             )
         except:
             LOGGER(__name__).error(
@@ -50,4 +50,4 @@ class YukkiBot(Client):
             self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
-        LOGGER(__name__).info(f"MissMusicBot olarak başladı {self.name}")
+        LOGGER(__name__).info(f"Kafataslakmusicbot olarak başladı {self.name}")
